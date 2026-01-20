@@ -1,0 +1,23 @@
+{
+  "name": "vorlesung",
+  "version": "1.0.0",
+  "description": "Übungen aus der Vorlesung",
+  "homepage": "https://github.com/JeGerl/Vorlesungen#readme",
+  "bugs": {
+    "url": "https://github.com/JeGerl/Vorlesungen/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeGerl/Vorlesungen.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "Trinkgeld.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}

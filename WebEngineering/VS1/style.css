@@ -1,0 +1,15 @@
+table,td,th{
+    border: 1px solid black;
+}
+header{
+    margin-top: 20px;
+}
+.train{
+    margin-bottom: 200px;
+}
+.abstand{
+    margin-top: 50px;
+}
+dt{
+    font-weight: bold;
+}

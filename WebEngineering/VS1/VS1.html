@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="de">  
+    <head>
+        <meta charset="UTF-8">
+        <title>Eine Kleine Zusammenfassung</title>
+        <link rel="stylesheet" href="./style.css">
+    <header id="Seitenanfang">
+        <a href="#Uebung1">Übung1</a>
+        <a href="#Uebung2">Übung2</a>
+        <a href="#Uebung3">Übung3</a>
+        <a href="#Uebung4">Übung4</a>
+        <a href="#Uebung5">Übung5</a>
+        <a href="#Uebung6">Übung6</a>
+        <a href="#Uebung7">Übung7</a>
+        <a href="#Uebung8">Übung8</a>
+    </header>
+    <body>
+        <h1>Übungen zur ersten Vorlesung</h1>
+        <div id="Uebung1" class="train">
+        <h2>Beginn der Verschiedenen Tags für 4 Absätze</h2>
+        <p>Das ist eine <strong>fette</strong>Schrift </p>
+        <p>Das hier ist nun <em>kursiv</em> geschrieben</p>
+        <p>Das ist ein <u>unterstrichener</u> Text</p>
+        <hr/>
+        <p>Ein <font color="red" size="+3">roter</font> text</p>
+        <a href="#Seitenanfang">Zum Anfang</a>
+        </div>
+        <div id="Uebung2" class="train">
+            <h2>Übung 2</h2>
+            <br>Hier kommt ein bild</p> <br>
+            <img src=".\graphics\IMG_6624.jpg" alt="Not loaded" style="width: 50%; height: 50%;">
+            <br>
+            <a href="#Seitenanfang">Zum Anfang</a>
+        </div>
+        <div id="Uebung3" class="train">
+            <h1 >Übung3</h1>
+            <div>
+                <a href=".\mustermann.html">Öffne Die Mustermann Seite</a>
+            </div>
+            <br>
+            <a href="#Seitenanfang">Zum Anfang</a>
+        </div>
+        <div id="Uebung4" class="train">
+            <h1 >Übung4</h1>
+            <div>
+                <h2>Tabellen</h2>
+                <h3>Notstromanlagen</h3>
+                <table>
+                    <tr>
+                        <th>Typ</th>
+                        <th>Leistung</th>
+                        <th>Netzspannung</th>
+                        <th>Gewicht</th>
+                    </tr>
+                    <tr>
+                        <td>MX-37</td>
+                        <td>46 kW</td>
+                        <td>230V</td>
+                        <td>450kg</td>
+                    </tr>
+                    <tr>
+                        <td>MX-38</td>
+                        <td>55 kW</td>
+                        <td>230V</td>
+                        <td>700kg</td>
+                    </tr>
+                    <tr>
+                        <td>XY-123</td>
+                        <td>90 kW</td>
+                        <td>230V</td>
+                        <td>900kg</td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <a href="#Seitenanfang">Zum Anfang</a>
+        </div>
+        <div id="Uebung5" class="train">
+            <h1>Übung 5</h1>
+            <h2>Listen</h2>
+            <h3 class="abstand">Geordnete Liste</h3>
+            <ol type="1">
+                <li>Erläuterung</li>
+                <li>Projektentwicklung</li>
+                <li>Abschluss</li>
+            </ol>
+            <h3 class="abstand">Ungeordnete Liste</h3>
+                <ul type="circle">
+                    <li>Einkaufen</li>
+                    <li>kochen</li>
+                    <li>putzen</li>
+                </ul>
+                <h3 class="abstand">Definitionsliste</h3>
+                <dl>
+                    <dt>CSS</dt>
+                    <dd>Cascading Style Sheets</dd>
+                    <dt>HTML</dt>
+                    <dd>Hypertext Markup Language</dd>
+                </dl>
+            <a href="#Seitenanfang">Zum Anfang</a>
+        </div>
+        <div id="Uebung6" class="train">
+            <h1>Übung 6</h1>
+            <h2>Sematic Style</h2>
+            <a href=".\bernerslee.html" class="abstand">Sir Timothy John Berners-Lee</a><br>
+            <a href="#Seitenanfang">Zum Anfang</a>
+        </div>
+        <div id="Uebung7" class="train">
+            <h1>Übung 7</h1>
+            <h2>Formulare</h2>
+            <div style="width: 20%;">
+                <form action="">
+                    <label for="vorname">Vorname: </label>
+                    <input type="text" id="vorname" name="vorname" required> <br>
+                    <label for="nachname">Nachname: </label>
+                    <input type="text" name="nachname" id="nachname" required><br>
+                    <label for="mail">E-Mail:</label>
+                    <input type="email" name="mail" id="mail" required><br>
+                    <label for="telefon">Telefon</label>
+                    <input type="tel" name="telefon" id="telefon"><br>
+                    <label for="betreff">Betreff</label>
+                    <select name="betreff" id="betreff">
+                        <option value="Allgemein">Allgemeines</option>
+                        <option value="Support">Support</option>
+                        <option value="Kontakt">Kontakt</option>
+                    </select><br>
+                    <label for="message">Nachricht</label>
+                    <textarea name="message" id="message" minlength="10" rows="10" cols="40"></textarea><br>
+                    <label for="datenschutz">Datenschutz bestätigen</label>
+                    <input type="checkbox" required><br>
+                    <input type="submit" value="submit">
+                </form>
+            </div>
+            <br>
+            <a href="#Seitenanfang">Zum Anfang</a>
+        </div>
+        <div id="Uebung8" class="train">
+            <h1>Übung 8</h1>
+            <h2>Video</h2>
+            <br>
+                <video width="320" height="240" controls>
+                    <source src=".\graphics\testvideo.mp4" type="video/mp4">
+
+                </video>
+            <br>
+            <a href="#Seitenanfang">Zum Anfang</a>
+        </div>
+
+    </body>
+</html>

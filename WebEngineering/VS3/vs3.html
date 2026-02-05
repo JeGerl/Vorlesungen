@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Eine Kleine Zusammenfassung</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 id="headline">Test</h1>
+    <p class="info">Element1</p>
+    <p class="info">Element2</p>
+    <p class="info">Element3</p>
+    <p class="info">Element4</p>
+
+
+    <div class="box">lement</div>
+    <div class="box">element</div>
+    <div class="box">lement</div>
+    <div class="box">lement</div>
+    <div class="box">lement</div>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+
+<script>
+    let headline = document.getElementById("headline")
+    headline.innerText ="Willkommen zum DOM-Training";
+    let infos = document.getElementsByClassName("info");
+    infos[0].innerText = "Test Erstes Element"
+    infos[infos.length -1].innerText = "Test Letztes Element"
+
+    document.querySelector(".box").innerText="Erste Box"
+
+    let liste = document.querySelectorAll("li")
+    for(let i =0; i<liste.length;i++){
+        liste[i].innerText="Punkt "+(i+1)
+    }
+</script>

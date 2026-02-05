@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="de">  
-    <head>
-        <meta charset="UTF-8">
-        <title>Eine Kleine Zusammenfassung</title>
-        <link rel="stylesheet" href="./style.css">
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Eine Kleine Zusammenfassung</title>
+    <link rel="stylesheet" href="./style.css">
     <header id="Seitenanfang">
         <a href="#Uebung1">Übung1</a>
         <a href="#Uebung2">Übung2</a>
@@ -13,138 +14,295 @@
         <a href="#Uebung6">Übung6</a>
         <a href="#Uebung7">Übung7</a>
         <a href="#Uebung8">Übung8</a>
+        <a href="#Uebung9">Übung9</a>
+        <a href="#Uebung10">Übung10</a>
+        <a href="#Uebung11">Übung11</a>
+        <a href="#Uebung12">Übung12</a>
+        <a href="#Uebung13">Übung13</a>
     </header>
-    <body>
-        <h1>Übungen zur ersten Vorlesung</h1>
-        <div id="Uebung1" class="train">
+
+<body>
+    <h1>Übungen zur ersten Vorlesung</h1>
+    <div id="Uebung1" class="train">
         <h2>Beginn der Verschiedenen Tags für 4 Absätze</h2>
         <p>Das ist eine <strong>fette</strong>Schrift </p>
         <p>Das hier ist nun <em>kursiv</em> geschrieben</p>
         <p>Das ist ein <u>unterstrichener</u> Text</p>
-        <hr/>
+        <hr />
         <p>Ein <font color="red" size="+3">roter</font> text</p>
         <a href="#Seitenanfang">Zum Anfang</a>
+    </div>
+    <div id="Uebung2" class="train">
+        <h2>Übung 2</h2>
+        <br>
+        <p>Hier kommt ein bild</p> <br>
+        <img src=".\graphics\IMG_6624.jpg" alt="Not loaded" style="width: 50%; height: 50%;">
+        <br>
+        <a href="#Seitenanfang">Zum Anfang</a>
+    </div>
+    <div id="Uebung3" class="train">
+        <h1>Übung3</h1>
+        <div>
+            <a href=".\mustermann.html">Öffne Die Mustermann Seite</a>
         </div>
-        <div id="Uebung2" class="train">
-            <h2>Übung 2</h2>
-            <br>Hier kommt ein bild</p> <br>
-            <img src=".\graphics\IMG_6624.jpg" alt="Not loaded" style="width: 50%; height: 50%;">
-            <br>
-            <a href="#Seitenanfang">Zum Anfang</a>
+        <br>
+        <a href="#Seitenanfang">Zum Anfang</a>
+    </div>
+    <div id="Uebung4" class="train">
+        <h1>Übung4</h1>
+        <div>
+            <h2>Tabellen</h2>
+            <h3>Notstromanlagen</h3>
+            <table>
+                <tr>
+                    <th>Typ</th>
+                    <th>Leistung</th>
+                    <th>Netzspannung</th>
+                    <th>Gewicht</th>
+                </tr>
+                <tr>
+                    <td>MX-37</td>
+                    <td>46 kW</td>
+                    <td>230V</td>
+                    <td>450kg</td>
+                </tr>
+                <tr>
+                    <td>MX-38</td>
+                    <td>55 kW</td>
+                    <td>230V</td>
+                    <td>700kg</td>
+                </tr>
+                <tr>
+                    <td>XY-123</td>
+                    <td>90 kW</td>
+                    <td>230V</td>
+                    <td>900kg</td>
+                </tr>
+            </table>
         </div>
-        <div id="Uebung3" class="train">
-            <h1 >Übung3</h1>
+        <br>
+        <a href="#Seitenanfang">Zum Anfang</a>
+    </div>
+    <div id="Uebung5" class="train">
+        <h1>Übung 5</h1>
+        <h2>Listen</h2>
+        <h3 class="abstand">Geordnete Liste</h3>
+        <ol type="1">
+            <li>Erläuterung</li>
+            <li>Projektentwicklung</li>
+            <li>Abschluss</li>
+        </ol>
+        <h3 class="abstand">Ungeordnete Liste</h3>
+        <ul type="circle">
+            <li>Einkaufen</li>
+            <li>kochen</li>
+            <li>putzen</li>
+        </ul>
+        <h3 class="abstand">Definitionsliste</h3>
+        <dl>
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets</dd>
+            <dt>HTML</dt>
+            <dd>Hypertext Markup Language</dd>
+        </dl>
+        <a href="#Seitenanfang">Zum Anfang</a>
+    </div>
+    <div id="Uebung6" class="train">
+        <h1>Übung 6</h1>
+        <h2>Sematic Style</h2>
+        <a href=".\bernerslee.html" class="abstand">Sir Timothy John Berners-Lee</a><br>
+        <a href="#Seitenanfang">Zum Anfang</a>
+    </div>
+    <div id="Uebung7" class="train">
+        <h1>Übung 7</h1>
+        <h2>Formulare</h2>
+        <div style="width: 20%;">
+            <form action="">
+                <label for="vorname">Vorname: </label>
+                <input type="text" id="vorname" name="vorname" required> <br>
+                <label for="nachname">Nachname: </label>
+                <input type="text" name="nachname" id="nachname" required><br>
+                <label for="mail">E-Mail:</label>
+                <input type="email" name="mail" id="mail" required><br>
+                <label for="telefon">Telefon</label>
+                <input type="tel" name="telefon" id="telefon"><br>
+                <label for="betreff">Betreff</label>
+                <select name="betreff" id="betreff">
+                    <option value="Allgemein">Allgemeines</option>
+                    <option value="Support">Support</option>
+                    <option value="Kontakt">Kontakt</option>
+                </select><br>
+                <label for="message">Nachricht</label>
+                <textarea name="message" id="message" minlength="10" rows="10" cols="40"></textarea><br>
+                <label for="datenschutz">Datenschutz bestätigen</label>
+                <input type="checkbox" required><br>
+                <input type="submit" value="submit">
+            </form>
+        </div>
+        <br>
+        <a href="#Seitenanfang">Zum Anfang</a>
+    </div>
+    <div id="Uebung8" class="train">
+        <h1>Übung 8</h1>
+        <h2>Video</h2>
+        <br>
+        <video width="320" height="240" controls>
+            <source src=".\graphics\testvideo.mp4" type="video/mp4">
+
+        </video>
+        <br>
+        <a href="#Seitenanfang">Zum Anfang</a>
+    </div>
+    <div id="Uebung9" class="train">
+
+        <h1>Übung 9</h1>
+        <h2>CSS</h2>
+        <br>
+        <div id="CSStrain">
+            <h1>Verwendung von Selektoren</h1>
+            <h2> Überschrift Stufe 2</h2>
             <div>
-                <a href=".\mustermann.html">Öffne Die Mustermann Seite</a>
+                <p class="highlight hervor">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                    et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                    et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </p>
+                <p class="highlight"> highligted P</p>
             </div>
-            <br>
-            <a href="#Seitenanfang">Zum Anfang</a>
-        </div>
-        <div id="Uebung4" class="train">
-            <h1 >Übung4</h1>
+            <h2>Überschrift 2</h2>
             <div>
-                <h2>Tabellen</h2>
-                <h3>Notstromanlagen</h3>
-                <table>
-                    <tr>
-                        <th>Typ</th>
-                        <th>Leistung</th>
-                        <th>Netzspannung</th>
-                        <th>Gewicht</th>
-                    </tr>
-                    <tr>
-                        <td>MX-37</td>
-                        <td>46 kW</td>
-                        <td>230V</td>
-                        <td>450kg</td>
-                    </tr>
-                    <tr>
-                        <td>MX-38</td>
-                        <td>55 kW</td>
-                        <td>230V</td>
-                        <td>700kg</td>
-                    </tr>
-                    <tr>
-                        <td>XY-123</td>
-                        <td>90 kW</td>
-                        <td>230V</td>
-                        <td>900kg</td>
-                    </tr>
-                </table>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                    et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                    et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
             </div>
-            <br>
-            <a href="#Seitenanfang">Zum Anfang</a>
+
         </div>
-        <div id="Uebung5" class="train">
-            <h1>Übung 5</h1>
-            <h2>Listen</h2>
-            <h3 class="abstand">Geordnete Liste</h3>
-            <ol type="1">
-                <li>Erläuterung</li>
-                <li>Projektentwicklung</li>
-                <li>Abschluss</li>
-            </ol>
-            <h3 class="abstand">Ungeordnete Liste</h3>
-                <ul type="circle">
-                    <li>Einkaufen</li>
-                    <li>kochen</li>
-                    <li>putzen</li>
+        <p>Die Wichtige Aussage: <span id="wichtig"> id="wichtig"</span></p>
+        <br>
+        <a href="#Seitenanfang">Zum Anfang</a>
+    </div>
+
+    <div id="Uebung10" class="train">
+        <h1>Überschrift (h1)</h1>
+        <section>
+            <h2>Überschrift (h2)</h2>
+            <div>
+                <article>Article innerhalb eines DIVElements, das ein einem SectionElement enthalten ist
+                </article>
+            </div>
+        </section>
+        <section>
+            <article>Article als KindElement eines Section-Elements.
+            </article>
+        </section>
+        <h2>Überschrift (H2)</h2>
+    </div>
+    <div id="Uebung11" class="train">
+        <h1>Nachfahren-Selektor</h1>
+        <section>
+            Gliederung:
+            <ul>
+                <li>Article 1</li>
+                <li>Article 2</li>
+                <li>Article 3</li>
+            </ul>
+        </section>
+        <article>
+            Einkaufsliste:
+            <ul>
+                <li>Kekse</li>
+                <li>Kuchen</li>
+                <li>Torte</li>
+                <li>etwas gesundes</li>
+            </ul>
+        </article>
+        <div>
+            <h1>Überschrift</h1>
+            <p>I am blue</p>
+            <div>I am not blue</div>
+            <div>I am not blue</div>
+            <p>I am blue</p>
+        </div>
+        <br>
+        <a href="#Seitenanfang">Zum Anfang</a>
+    </div>
+    <div id="Uebung12" class="train">
+        <h1>Pseudoklassen</h1>
+        <div>
+            <header>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="https://www.dhbw-stuttgart.de" target="_blank">DHBW Stuttgart</a></li>
+                    <li> <a href="http://www.dhbw-loerrach.de" target="_blank">DHBW Lörrach</a></li>
                 </ul>
-                <h3 class="abstand">Definitionsliste</h3>
-                <dl>
-                    <dt>CSS</dt>
-                    <dd>Cascading Style Sheets</dd>
-                    <dt>HTML</dt>
-                    <dd>Hypertext Markup Language</dd>
-                </dl>
-            <a href="#Seitenanfang">Zum Anfang</a>
+            </header>
         </div>
-        <div id="Uebung6" class="train">
-            <h1>Übung 6</h1>
-            <h2>Sematic Style</h2>
-            <a href=".\bernerslee.html" class="abstand">Sir Timothy John Berners-Lee</a><br>
-            <a href="#Seitenanfang">Zum Anfang</a>
+
+        <div>
+            <h2>Tabelle</h2>
+
+            <table>
+                <tr>
+                <th>Firma</th>
+                <th>Kontakt</th>
+                <th>Land</th>
+                </tr>
+                <tr>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                </tr>
+                <tr>
+                    <td>Centro comercial Moctezuma</td>
+                    <td>Francisco Chang</td>
+                    <td>Mexico</td>
+                </tr>
+                <tr>
+                    <td>Ernst Handel</td>
+                    <td>Roland Mendel</td>
+                    <td>Austria</td>
+                </tr>
+                <tr>
+                    <td>Island Trading</td>
+                    <td>Helen Bennett</td>
+                    <td>UK</td>
+                </tr>
+                <tr>
+                    <td>Laughing Bacchus Winecellars</td>
+                    <td>Yoshi Tannmuri</td>
+                    <td>Canada</td>
+                </tr>
+                <tr>
+                    <td>Magazzini Alimentari Riuniti</td>
+                    <td>Giovanni Roelli</td>
+                    <td>Italy</td>
+                </tr>
+            </table>
         </div>
-        <div id="Uebung7" class="train">
-            <h1>Übung 7</h1>
-            <h2>Formulare</h2>
-            <div style="width: 20%;">
-                <form action="">
-                    <label for="vorname">Vorname: </label>
-                    <input type="text" id="vorname" name="vorname" required> <br>
-                    <label for="nachname">Nachname: </label>
-                    <input type="text" name="nachname" id="nachname" required><br>
-                    <label for="mail">E-Mail:</label>
-                    <input type="email" name="mail" id="mail" required><br>
-                    <label for="telefon">Telefon</label>
-                    <input type="tel" name="telefon" id="telefon"><br>
-                    <label for="betreff">Betreff</label>
-                    <select name="betreff" id="betreff">
-                        <option value="Allgemein">Allgemeines</option>
-                        <option value="Support">Support</option>
-                        <option value="Kontakt">Kontakt</option>
-                    </select><br>
-                    <label for="message">Nachricht</label>
-                    <textarea name="message" id="message" minlength="10" rows="10" cols="40"></textarea><br>
-                    <label for="datenschutz">Datenschutz bestätigen</label>
-                    <input type="checkbox" required><br>
-                    <input type="submit" value="submit">
-                </form>
+        <br>
+        <a href="#Seitenanfang">Zum Anfang</a>
+    </div>
+
+    <div id="Uebung13" class="train">
+        <h1>Animation und Positionen</h1>
+            <div id="inbox">
+                <div id="links">
+
+                </div>
+                <div id="rechts">
+
+                </div>
             </div>
-            <br>
-            <a href="#Seitenanfang">Zum Anfang</a>
-        </div>
-        <div id="Uebung8" class="train">
-            <h1>Übung 8</h1>
-            <h2>Video</h2>
-            <br>
-                <video width="320" height="240" controls>
-                    <source src=".\graphics\testvideo.mp4" type="video/mp4">
+         <br>
+        <a href="#Seitenanfang">Zum Anfang</a>
+    </div>
 
-                </video>
-            <br>
-            <a href="#Seitenanfang">Zum Anfang</a>
-        </div>
+</body>
 
-    </body>
 </html>

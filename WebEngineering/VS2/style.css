@@ -1,0 +1,59 @@
+
+.card.customcards{
+    max-width: 200px;
+    min-width: 150px;
+    margin-bottom: 10px;
+}
+.cardarea{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#Beispielmodal{
+    width: 50%;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+#bilderkarusell{
+    max-height: 400px;
+    margin-bottom: 1%;
+}
+
+
+#bilderkarusell .carousel-inner,
+#bilderkarusell .carousel-item,
+#bilderkarusell .carousel-item img {
+    max-height: 400px;
+}
+
+#bilderkarusell .carousel-item img {
+    width: auto;
+    object-fit: contain;
+    
+}
+#bilderkarusell button{
+    max-height: 30px;
+    max-width: 50px;
+    align-self: center;
+    background-color: black;
+    margin: 1%;
+}
+
+@media (max-width:767px) {
+    #beispielinhalt{
+        background-color: red;
+    }
+}
+@media (min-width:768px) {
+    #Beispielmodal{
+        background-color: aqua;
+    }
+}
+@media (min-width: 992px) {
+    #Beispielmodal{
+        background-color: chartreuse;
+    }
+}

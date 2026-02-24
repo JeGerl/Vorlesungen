@@ -1,0 +1,127 @@
+<html>
+
+<head>
+    <title>Beispiel 1</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <p>Hallo Welt</p>
+    <ul class="nav nav-pills flex-column mb-auto" id="liste">
+        <li class="nav-item">
+            <a href="#" class="nav-link link-dark" id="btnStudiengaenge">
+                <i class="fs-4 bi-speedometer2 sidebar-icon" style="font-size: 16px"></i>
+                <span class="d-none d-lg-inline ms-2">Studiengänge</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link link-dark" id="btnVorlesungen">
+                <i class="fs-6 bi-table sidebar-icon" style="font-size: 1rem;"></i>
+                <span class="d-none d-lg-inline ms-2">Vorlesungen</span>
+            </a>
+        </li>
+    </ul>
+    <div>
+        <button id="zahlen" type="button">Zähler</button>
+    </div>
+    <div>
+        <p>Wert: </p>
+        <span id="wert">0</span>
+    </div>
+
+    <div>
+        <span id="colortext">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</span>
+    </div>
+
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+
+    <h1>Inhaltsverzeichnis</h1>
+    <div class="accordion">
+        <h2>Kapitel 1</h2>
+        <div>
+            <p> Loren ipsum</p>
+        </div>
+        <h2 >Kapitel 2</h2>
+        <div>
+            <p> Loren ipsum</p>
+        </div>
+        <h2 >Kapitel 3</h2>
+        <div>
+            <p> Loren ipsum</p>
+        </div>
+        <h2>Kapitel 4</h2>
+        <div>
+            <p> Loren ipsum</p>
+        </div>
+    </div>
+</body>
+
+<script>
+    let studiengangbtn = document.getElementById("btnStudiengaenge");
+    let vorlesungbtn = document.getElementById("btnVorlesungen");
+
+    studiengangbtn.addEventListener('click', function () {
+        document.getElementById("liste").classList.add("blue")
+    })
+    vorlesungbtn.addEventListener('click', function () {
+        document.getElementById("liste").classList.remove("blue")
+    })
+
+    let zahlerbtn = document.getElementById("zahlen");
+    let anzeige = document.getElementById("wert");
+    let value = 0;
+    zahlerbtn.addEventListener('click', function () {
+        value++;
+        if (value > 10) {
+            value = 0;
+        }
+        anzeige.innerText = value;
+
+    })
+
+    let change = document.getElementById("colortext")
+    change.addEventListener('click', function () {
+        if (change.classList.contains("redtext")) {
+            change.classList.remove("redtext");
+        } else {
+            change.classList.add("redtext");
+        }
+    })
+
+    let allcapter= document.querySelectorAll('.accordion>h2');
+
+    allcapter.forEach(function(chapter){
+        console.log("added Listener")
+        chapter.addEventListener("click",function(open){
+            console.log("listen to "+ open.currentTarget.innerText)
+            openchapter(open.currentTarget.nextElementSibling);
+        })
+    })
+    function collapseAll() {
+        document.querySelectorAll('.accordion>div').forEach(function (el) {
+            el.style.display = 'none';
+        });
+    }
+
+    function openchapter(obj){
+        collapseAll();
+        obj.style.display='block';
+    }
+
+
+
+
+</script>

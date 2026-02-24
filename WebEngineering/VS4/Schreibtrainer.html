@@ -1,0 +1,96 @@
+<html>
+
+<head>
+    <title>Beispiel 1</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <div id="head" class="info">
+            <h1>Teste deine Schreibgeschwindigkeit</h1>
+        </div>
+        <div id="Anweisung" class="info">
+            <span>Das ist der Schreibtest. Dein Ziel ist es den unten stehenden Text exakt abzutippen. Der Timer startet
+                sobald Du anfängst, den Text einzugeben. Der Timer endet, wenn Du den Text exakt eingegeben hast.</span>
+        </div>
+
+    </header>
+
+    <article>
+        <div id="Tipptext">
+            <span id="Prüftext">Dies ist der Schreibtest. Das Ziel ist es, den Text EXAKT abzutippen!</span>
+        </div>
+        <div id="input">
+            <textarea name="" id="Freitext"></textarea>
+            <div class="timer">
+                <div id="displaytime">
+                    <span id="display">00:00:00</span>
+                </div>
+                <div id="control">
+                    <button id="resestbtn" onclick="reset()">Reset</button>
+                </div>
+            </div>
+        </div>
+
+    </article>
+</body>
+<script>
+    let currentrunning=false;
+    let startTime;
+    let elapsedTime = 0;
+    let timerInterval;
+    const Infield = document.getElementById("Freitext");
+    const display = document.getElementById('display');
+    const check = document.getElementById('Prüftext');
+
+    function timeToString(time) {
+        let diffInHrs = time / 3600000;
+        let hh = Math.floor(diffInHrs);
+
+        let diffInMin = (diffInHrs - hh) * 60;
+        let mm = Math.floor(diffInMin);
+
+        let diffInSec = (diffInMin - mm) * 60;
+        let ss = Math.floor(diffInSec);
+
+        let formattedHH = hh.toString().padStart(2, "0");
+        let formattedMM = mm.toString().padStart(2, "0");
+        let formattedSS = ss.toString().padStart(2, "0");
+
+        return `${formattedHH}:${formattedMM}:${formattedSS}`;
+    }
+    function start() {
+        startTime = Date.now() - elapsedTime;
+        timerInterval = setInterval(function printTime() {
+            elapsedTime = Date.now() - startTime;
+            display.innerHTML = timeToString(elapsedTime);
+        }, 1000);
+    }
+    function stop() {
+        clearInterval(timerInterval);
+    }
+
+    function reset() {
+        clearInterval(timerInterval);
+        display.innerHTML = "00:00:00";
+        elapsedTime = 0;
+        currentrunning=false;
+        Infield.innertext="";
+    }
+    Infield.addEventListener("input",function(){
+        if(!currentrunning){
+            start();
+            currentrunning=true;
+        }else{
+            console.log(check.innerText)
+            console.log(Infield.value)
+            if(check.innerText===Infield.value){
+                stop();
+            }
+        }
+
+    })
+
+
+</script>

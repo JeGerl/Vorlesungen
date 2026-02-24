@@ -1,0 +1,80 @@
+.blue{
+    background-color: blue;
+}
+
+.redtext{
+    color: red;
+}
+
+.accordion > div {
+display: none;
+}
+
+h2{
+    background-color: beige;
+}
+
+body{
+    align-self: center;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.info{
+    color: white;
+    text-align: center;
+}
+#head{
+    padding: 5%;
+    background-color: orange;
+    
+    
+}
+#Anweisung{
+    padding: 10%;
+    margin-top: 0;
+    background-color: cadetblue;
+}
+
+#Tipptext{
+    background-color: lightgray;
+    margin: 7%;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#input{
+     margin: 7%;
+}
+#Freitext{
+    border-color: grey;
+    border-style: solid;
+    border-width: 10px;
+    height: 10%;
+    width: 100%
+}
+#displaytime{
+    float: left;
+    font-weight: bold;
+    font-size: 50px;
+}
+#control{
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#resestbtn{
+    border-color: red;
+    border-style: solid;
+    border-width: 7px;
+    background-color: white;
+    color: red;
+    width: 90px;
+    height: 50px;
+}
+.timer{
+    margin-top: 4%;
+}
